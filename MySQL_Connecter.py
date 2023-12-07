@@ -1,5 +1,6 @@
-import MySQL_connecter
-import MySQL_connecter import Error
+import mysql.connector
+from mysql.connector import Error
+import pandas as pd
 
 
 #creating the server takes the host_name, user_name, and user_password
@@ -30,9 +31,9 @@ def create_database(connection, query): #This takes a connection and a SQL query
         print(f"Error: '{err}'")
 
 #Define a query and call the function 
-create_database_query = "CREATE DATABASE school"
+''' create_database_query = "CREATE DATABASE school"
 create_database (connection, create _database _query)
-
+ '''
 
 
 def create_db_connection(host_name, user_name, user_password, db_name):
@@ -62,4 +63,3 @@ def execute_query(connection, query):
     except Error as err:
         print(f"Error: '{err}'")
 
-        
