@@ -33,3 +33,8 @@ CREATE TABLE user (
 	PRIMARY KEY(Card_no)
 );
 
+CREATE TABLE page (
+    page_num INT NOT NULL,
+    
+);
+
